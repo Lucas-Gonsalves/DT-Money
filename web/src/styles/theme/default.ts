@@ -1,7 +1,9 @@
 export const defaultTheme = {
 
   colors: {
-    white: "#ffffff",
+    "white-100": "#ffffff",
+    "white-200": "#fefefe",
+    "white-300": "#efefef",
 
     "gray-100": "#E1E1E6",
     "gray-300": "#C4C4CC",
@@ -29,7 +31,7 @@ export const defaultTheme = {
       xxs: "1.2rem",
       xs: "1.3rem",
       s: "1.4rem",
-      xm: "1.5",
+      xm: "1.5rem",
       m: "1.6rem",
       xxl: "1.8rem",
       l: "2rem",
@@ -56,6 +58,7 @@ export const defaultTheme = {
 
     height: {
       smaller: "100%",
+      medium: "140%",
       default: "160%",
     },
   },

@@ -20,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${props => props.theme.colors["gray-800"]};
-    color: ${props => props.theme.colors["gray-100"]};
     
     -webkit-font-smoothing: antialiased;
   }
@@ -29,9 +28,10 @@ export const GlobalStyle = createGlobalStyle`
     
     font-weight: ${props => props.theme.font.weight.regular};
     font-family: ${props => props.theme.font.family.default};
-    font-size: ${props => props.theme.font.size.s};
+    font-size: ${props => props.theme.font.size.m};
 
-
+    line-height: ${props => props.theme.line.height.default};
+    color: ${props => props.theme.colors["gray-100"]};
   }
 
 `;
