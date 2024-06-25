@@ -50,8 +50,9 @@ export const SummaryDetailContainer = styled.div<SummaryDetailContainerProps>`
 
   &:hover {
     transition: .3s ease;
-    filter: brightness(1.08)
-  }
+    filter: brightness(1.08);
+  };
+  
 
   @media (min-width: ${breakpoints.m}) {
     min-width: 32rem;

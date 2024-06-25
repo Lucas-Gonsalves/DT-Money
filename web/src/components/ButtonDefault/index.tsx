@@ -9,15 +9,18 @@ interface ButtonDefaultProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 
 export function ButtonDefault({
-  title = "",
+
+  title = "undefined",
   onClickButtonDefault = () => {},
+
   ...props
+
 }: ButtonDefaultProps ) {
 
   function handleClickButtonDefault() {
     onClickButtonDefault();
     return;
-  } 
+  };
 
   return (
     <ButtonDefaultContainer

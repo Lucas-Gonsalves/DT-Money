@@ -20,16 +20,12 @@ export const SummaryContainer = styled.section`
   scroll-behavior: smooth;
   scrollbar-color: ${props => props.theme.colors["green-500"]} transparent;
 
-  @media (min-width: ${breakpoints.l}) {
-    flex-wrap: wrap;
-    justify-content: center;
-
-    padding-bottom: 0;
-  }
 
   @media (min-width: ${breakpoints.g}) {
     justify-content: space-between;
     flex-wrap: nowrap;
+
+    padding-bottom: 0;
   }
 
   @media (min-width: ${breakpoints.ex}) {

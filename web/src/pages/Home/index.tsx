@@ -5,6 +5,7 @@ import {
 
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
+import { Search } from "../../components/Search";
 
 
 export function Home() {
@@ -15,6 +16,11 @@ export function Home() {
       <HomeContent>
         <Summary/>
 
+        <Search
+          id="search-form"
+          title="Transições"
+          inputPlaceholder="Busque uma transição"
+        />
       </HomeContent>
 
     </HomeContainer>

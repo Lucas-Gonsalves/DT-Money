@@ -18,8 +18,19 @@ export const HomeContent = styled.div`
   padding: 0 2.4rem;
   margin: -5.81rem auto;
 
+  #search-form {
+    margin-top: 3.4rem;
+  }
+
   @media (min-width: ${breakpoints.m}) {
     margin: -6.25rem auto;
+  }
+
+  @media (min-width: ${breakpoints.g}) {
+
+    #search-form {
+      margin-top: 6.4rem;
+    }
   }
 
   @media (min-width: ${breakpoints.ex}) {
