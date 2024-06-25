@@ -22,6 +22,12 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.colors["gray-800"]};
     
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+    -webkit-touch-callout: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
   }
 
   body, input, textarea, button {
@@ -32,6 +38,14 @@ export const GlobalStyle = createGlobalStyle`
 
     line-height: ${props => props.theme.line.height.default};
     color: ${props => props.theme.colors["gray-100"]};
+  }
+
+  img, svg {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
 `;
