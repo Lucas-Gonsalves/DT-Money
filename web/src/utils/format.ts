@@ -9,13 +9,15 @@ function upperFirstLetter(text: string): string {
 
 
 function toDecimalNumber(targetNumber: number) {
-  const formattedNumber = targetNumber.toFixed(2).toString();
+  const fixedFormattedStringfy = targetNumber.toFixed(2).toString();
 
-  const [integerPart, decimalPart] = formattedNumber.split('.');
+  const [integerPart, decimalPart] = fixedFormattedStringfy.split('.');
 
   const formattedIntegerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
-  return `${formattedIntegerPart},${decimalPart}`;
+  const formattedInteger = `${formattedIntegerPart},${decimalPart}`;
+
+  return  formattedInteger.replace("-", "");
 };
 
 export const format = {

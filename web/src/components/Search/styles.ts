@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/device/breakpoints";
 
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled.section`
   width: 100%;
 `;
 

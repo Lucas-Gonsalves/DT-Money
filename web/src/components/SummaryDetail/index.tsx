@@ -15,12 +15,14 @@ import { format } from "../../utils/format";
 interface SummaryDetailProps {
   type?: "entrada" | "saida" | "total";
   value?: number;
+  lastEntry?: string;
 };
 
 
 export function SummaryDetail({
   type = "total",
   value = 0,
+  lastEntry = "3 de abril"
 }: SummaryDetailProps) {
 
   const CorrespondingIcon = () => {
@@ -54,6 +56,7 @@ export function SummaryDetail({
       </TitleContent>
 
       <strong>R$ { valueFormated }</strong>
+      <p>Última entrada em { lastEntry }</p>
     </SummaryDetailContainer>
   );
 };

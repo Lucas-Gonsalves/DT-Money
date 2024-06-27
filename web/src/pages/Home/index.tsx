@@ -6,6 +6,9 @@ import {
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { Search } from "../../components/Search";
+import { TableTransaction } from "../../components/TableTransaction";
+
+import { tableData } from "../../utils/tableData";
 
 
 export function Home() {
@@ -20,6 +23,10 @@ export function Home() {
           id="search-form"
           title="Transições"
           inputPlaceholder="Busque uma transição"
+        />
+
+        <TableTransaction
+          rowsData={tableData}
         />
       </HomeContent>
 

@@ -47,6 +47,14 @@ export const SummaryDetailContainer = styled.div<SummaryDetailContainerProps>`
     }}
   }
 
+  > p {
+    color: ${props => props.theme.colors["gray-500"]};
+    font-size: ${props => props.theme.font.size.xs};
+
+    ${props => props["data-type"] === "total" && css`
+      color: ${props.theme.colors["white-200"]};
+    `}
+  }
 
   &:hover {
     transition: .3s ease;
@@ -62,11 +70,22 @@ export const SummaryDetailContainer = styled.div<SummaryDetailContainerProps>`
     > strong {
       font-size:  ${props => props.theme.font.size.xxe};
     }
+
+    
+    > p {
+      font-size: ${props => props.theme.font.size.s};
+    }
+    
   }
 
-  @media (min-width: ${breakpoints.g}) {
+  @media (min-width: ${breakpoints.xg}) {
+    min-width: 27rem;
     width: 100%;
+  
+    padding: 2rem 2.4rem;
   }
+
+
 
   @media (min-width: ${breakpoints.ex}) {
     min-width: 35.2rem;
