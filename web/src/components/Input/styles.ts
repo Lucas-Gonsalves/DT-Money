@@ -5,12 +5,12 @@ import { breakpoints } from "../../styles/device/breakpoints";
 export const InputContainer = styled.input`
   width: 100%;
 
-  min-height: 5.96rem;
+  min-height: 5.4rem;
   height: max-content;
 
   outline: none;
 
-  padding: 1.2rem 1.4rem;
+  padding: 1rem 1.4rem;
   border-radius: 6px;
 
   font-size: ${props => props.theme.font.size.s};
@@ -33,6 +33,10 @@ export const InputContainer = styled.input`
     color: ${props => props.theme.colors["gray-500"]};
   }
 
+  &:hover, &:focus {
+    background: ${props => props.theme.colors["gray-850"]};
+  }
+
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
@@ -49,8 +53,9 @@ export const InputContainer = styled.input`
   }
   
   @media (min-width: ${breakpoints.l}) {    
-    padding: 1.6rem 1.6rem;
-
+    min-height: 5.8rem;
+    
+    padding: 1.1rem 1.6rem;
     font-size: ${props => props.theme.font.size.m};
   }
 `;

@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     font-size: 62.5%;
+
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: ${props => props.theme.colors["green-500"]} ${props => props.theme.colors["gray-700"]};
   }
 
   :focus {
@@ -27,8 +31,8 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-touch-callout: none;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
-
   }
+
 
   body, input, textarea, button {
     

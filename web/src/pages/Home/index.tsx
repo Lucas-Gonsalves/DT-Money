@@ -1,21 +1,22 @@
-import { 
+import {
   HomeContainer, 
-  HomeContent 
+  HomeContent, 
 } from "./styles";
 
-import { Header } from "../../components/Header";
+import { TableTransaction } from "../../components/TableTransaction";
 import { Summary } from "../../components/Summary";
 import { Search } from "../../components/Search";
-import { TableTransaction } from "../../components/TableTransaction";
+import { Header } from "../../components/Header";
 
 import { tableData } from "../../utils/tableData";
 
 
 export function Home() {
+
   return(
     <HomeContainer>
       <Header/>
-
+      
       <HomeContent>
         <Summary/>
 
@@ -28,8 +29,8 @@ export function Home() {
         <TableTransaction
           rowsData={tableData}
         />
-      </HomeContent>
 
+      </HomeContent>
     </HomeContainer>
   );
 };

@@ -26,7 +26,7 @@ export const ButtonDefaultContainer = styled.button`
   transition: background-color .3s ease;
 
   &:hover {
-    background-color: ${props => props.theme.colors["green-300"]};
+    background-color: ${props => props.theme.colors["green-400"]};
   }
 
   @media (min-width: ${breakpoints.m}) {

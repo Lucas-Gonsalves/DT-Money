@@ -3,10 +3,10 @@ import { breakpoints } from "../../styles/device/breakpoints";
 
 
 export const ButtonTransparentContainer = styled.button`
-  min-width: 5.96rem;
+  min-width: 5.4rem;
   width: max-content;
 
-  min-height: 5.96rem;
+  min-height: 5.4rem;
   height: max-content;
 
   display: flex;
@@ -61,7 +61,10 @@ export const ButtonTransparentContainer = styled.button`
 
   
   @media (min-width: ${breakpoints.l}) {
-    padding: 1.6rem 3.2rem;    
+    min-width: 5.8rem;
+    min-height: 5.8rem;
+
+    padding: 1.4rem 3.2rem;    
 
     span {
       display: block;
